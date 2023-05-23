@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <svg height="800" width="800">
+        <defs>
+            <filter id="f1" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+
+            </filter>
+
+            <filter id="f2" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+
+            </filter>
+
+            </defs>
+
+            <rect width="300" height="300" stroke="red" stroke-width="20" fill="yellow"
+            filter="url(#f1)" />
+
+            <circle  cx="100" cy="500" r="90" stroke="blue" stroke-width="20" fill="pink"
+            filter="url(#f2)"> </circle>
+       
+    </svg>
+
+   
+
+</body>
+</html>
